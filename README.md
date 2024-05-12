@@ -12,9 +12,9 @@ to navigate to index.html page where you will have  sample text box to enter mes
 
 
 APIserviceEndpoint:
-http://localhost:8080/api/StrJsonConvertor?param=<INPUTTEXT>
+http://localhost:8080/api/StrJsonConvertor?param=INPUTTEXT
 
-Pass in a MESSAGE as shown above or call the API through postman to receive the response
+Pass in a message in INPUTTEXT as shown above or call the API through postman to receive the response
 
 sample request : key: param Value: test-Message Hello
 endPoint: http://localhost:8080/api/StrJsonConvertor?param=test-Message Hello
