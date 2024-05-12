@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>String To Json Convertor </title>
+{% endblock %}
+
+{% block body %}
+
+<div class="content" >
+    
+    <h1>Please Enter input below</h1>
+
+    
+    <form action="/" method="POST">
+        <input type="text" name = "content" id="content" placeholder="Please Enter a String Value to Convert to Json..." size="45">
+        <input type="submit" value = "Convert To Json">
+
+    </form>
+
+<br>
+<br>
+
+{% if input_Content and input_Content.valueStr|trim %}
+<table>
+    <tr>
+        <th> Original Value</th>  
+        <th> Converted Value</th> 
+        <th> Coverted On</th> 
+    </tr>
+    <tr>
+        <th>{{input_Content.valueStr}}</th>
+        <th>{{input_Content.valueJson}}</th>
+        <th>{{input_Content.LastUpdate}}</th>
+    </tr>
+</table>
+{%endif%}
+
+</div>
+{% endblock %}
